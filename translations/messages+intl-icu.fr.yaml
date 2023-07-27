@@ -1,0 +1,4 @@
+home:
+  say_welcome: 'Bonjour {name} !'
+  title: 'Accueil'
+  job_title: '{name} est un développeur web'

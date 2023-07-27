@@ -1,0 +1,2 @@
+ux_translator:
+    dump_directory: '%kernel.project_dir%/var/translations'
