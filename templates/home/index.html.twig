@@ -1,31 +1,7 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ 'home.title'|trans }}{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block body %}
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col">
-                <div class="card bg-light">
-                    <div class="card-body">
-                        <div {{ stimulus_controller('translator') }}>
-                            <div class="mb-3">
-                                <span {{ stimulus_target('translator', 'invitationTitleOutput') }}></span>
-                            </div>
-                            <div>
-                                <label for="invitationTitleOrganizationNameInput">Name</label>
-                                <input
-                                        class="form-control"
-                                        id="invitationTitleOrganizationNameInput"
-                                        value="Pentiminax"
-                                        {{ stimulus_target('translator', 'invitationTitleOrganizationNameInput') }}
-                                        {{ stimulus_action('translator', 'render') }}
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 {% endblock %}
