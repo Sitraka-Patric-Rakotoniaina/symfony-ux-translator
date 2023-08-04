@@ -1,0 +1,3 @@
+labels:
+  hello: "Hello"
+  job_title: "{name} is a web developer"

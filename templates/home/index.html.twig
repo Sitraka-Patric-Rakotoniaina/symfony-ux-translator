@@ -3,5 +3,32 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-
+    <div class="container">
+        <div class="mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <div {{ stimulus_controller('translator') }}>
+                                <div class="mb-3">
+                                    <span {{ stimulus_target('translator', 'jobTitleOutput') }}></span>
+                                </div>
+                                <div>
+                                    <label for="jobTitleInput">Name</label>
+                                    <input
+                                            type="text"
+                                            id="jobTitleInput"
+                                            class="form-control"
+                                            value="Sitraka"
+                                            {{ stimulus_target('translator', 'jobTitleInput') }}
+                                            {{ stimulus_action('translator', 'render') }}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

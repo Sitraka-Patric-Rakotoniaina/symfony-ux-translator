@@ -1,0 +1,3 @@
+labels:
+  hello: "Bonjour"
+  job_title: "{name} est un développeur web"
