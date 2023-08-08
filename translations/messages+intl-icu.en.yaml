@@ -1,3 +1,11 @@
 labels:
   hello: "Hello"
   job_title: "{name} is a web developer"
+app:
+  name: "Ux Translator"
+nav:
+  home: "Home"
+  about: "About"
+  contact: "Contact"
+  edit: 'Edit Profile'
+  create_file: "Create file"
